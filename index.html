@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>MOVIES for jQuery Practice</h1>
+    <div class="container">
+        <form action="" method="get" class="movieInputs">
+            <div class="movieInputs">
+                <label for="title">Enter Movie Title: </label>
+                <input type="text" name="title" id="title" placeholder="Titanic" minlength="2" required>
+            </div>
+            <div class="movieInputs">
+                <label for="rating">Enter Movie's Rating: </label>
+                <input type="number" name="rating" id="rating" min="0" max="10" placeholder="8" required>
+            </div>
+            <div class="movieInputs">
+                <input type="submit" class="submitBtn btn btn-secondary" value="Add your Movie Rating" id="submitBtn">
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <span class="material-icons">star_rate</span>
+        <span class="material-icons">star_rate</span>
+        <span class="material-icons">star_rate</span>
+        <ul id="movieRatingDisplay">
+
+        </ul>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
